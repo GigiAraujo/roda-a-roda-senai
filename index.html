@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jogo de Adivinhação</title>
+</head>
+<body>
+    <div class="conteudo">
+        <h2>Roda a Roda SENAI</h2>
+        <p>Tente adivinhar o número entre 1 e 100</p>
+        <div class="grupo-input">
+            <div class="campo-input">
+                <label for="palpite">Seu palpite:</label>
+                <input id="palpite" type="number" name="palpite" min="1" max="100">
+            </div>
+        </div>
+        <button id="adivinhar" onclick="verificarPalpite()">Adivinhar</button>
+        <div id="resultado">
+            <span class="tent">
+                Você tem 10 tentativas restantes.
+            </span>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
